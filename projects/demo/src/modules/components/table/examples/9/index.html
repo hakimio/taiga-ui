@@ -53,10 +53,16 @@
                 *tuiCell="'action'"
                 tuiTd
             >
-                <tui-icon
-                    class="t-chevron"
+                <button
+                    appearance="flat-grayscale"
+                    size="xs"
+                    tuiIconButton
+                    type="button"
+                    [style.border-radius]="'100%'"
                     [tuiChevron]="expand.expanded()"
-                />
+                >
+                    Toggle
+                </button>
             </td>
             <td
                 *tuiCell="'firstName'"
@@ -138,10 +144,16 @@
                 *tuiCell="'action'"
                 tuiTd
             >
-                <tui-icon
-                    class="t-chevron"
+                <button
+                    appearance="flat-grayscale"
+                    size="xs"
+                    tuiIconButton
+                    type="button"
+                    [style.border-radius]="'100%'"
                     [tuiChevron]="manualOpen"
-                />
+                >
+                    Toggle
+                </button>
             </td>
             <td
                 *tuiCell="'firstName'"
@@ -204,20 +216,22 @@
     </tbody>
 
     <tbody tuiTbody>
-        <tr
-            tuiTr
-            class="expand-heading-row-custom"
-        >
+        <tr tuiTr>
             <td
                 *tuiCell="'action'"
                 tuiTd
-                class="expand-heading-row-custom__expand"
-                (click)="customToggle()"
             >
-                <tui-icon
-                    class="t-chevron"
+                <button
+                    appearance="flat-grayscale"
+                    size="xs"
+                    tuiIconButton
+                    type="button"
+                    [style.border-radius]="'100%'"
                     [tuiChevron]="customOpen"
-                />
+                    (click)="customToggle()"
+                >
+                    Toggle
+                </button>
             </td>
             <td
                 *tuiCell="'firstName'"
